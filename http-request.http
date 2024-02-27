@@ -39,3 +39,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjOGExZDViM
 // Get Booking
 GET http://localhost:3000/api/v1/bookings/65dc340e441c2449f0ba707d
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjOGExZDViMDE5MGIyMTQzNjBkYzA1NyIsImlhdCI6MTcwODkzMDkwNSwiZXhwIjoxNzE2NzA2OTA1fQ.D2wq8l4K_4NbIp-kpMfF579ZZSB4y5ChlxF39zbtR-Q
+
+###
+// Get All Tours
+GET http://localhost:3000/api/v1/tours

@@ -8,6 +8,9 @@ html
             link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
             link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
             title Natours | #{title}
+
+    //- body(data-alert=`${alert ? alert : ''}`)
+    //- Here we'll add the alert message to the body element, using a 'data-alert' property that we'll set conditionally based on the 'alert' variable's availability.
     body
         include _header
 

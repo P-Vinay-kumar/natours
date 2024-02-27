@@ -20,7 +20,7 @@ const compression = require('compression'); // This will expose a very simple mi
 const cors = require('cors');
 
 const app = express();
-app.enable('trust proxy'); // Heroku acts as a reverse proxy, which redirects and potentially modifying incoming requests. Therefore, enabling trust proxy is necessary to ensure the application interprets the headers correctly. This functionality is built into Express.
+// app.enable('trust proxy'); // Heroku acts as a reverse proxy, which redirects and potentially modifying incoming requests. Therefore, enabling trust proxy is necessary to ensure the application interprets the headers correctly. This functionality is built into Express.
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
