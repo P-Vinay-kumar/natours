@@ -1,0 +1,41 @@
+POST http://localhost:3000/api/v1/users/signup
+Content-Type: application/json
+
+{
+  "name": "Vinay kumar",
+  "email": "s170528@rguktsklm.ac.in",
+  "password": "pass1234",
+  "passwordConfirm": "pass1234"
+}
+
+###
+POST http://localhost:3000/api/v1/users/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "test1234"
+}
+
+###
+GET http://localhost:3000/api/v1/bookings/checkout-session/5c88fa8cf4afda39709c2955
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjOGEyNDgyMmY4ZmI4MTRiNTZmYTE5MiIsImlhdCI6MTcwODc0NTQzMiwiZXhwIjoxNzE2NTIxNDMyfQ.JNa5j_w-20dSdxjPXZiF8q2IlLcgJVJf4qQaXXQQex0
+
+###
+POST http://localhost:3000/api/v1/users/login
+Content-Type: application/json
+
+{
+  "email": "admin@natours.io",
+  "password": "test1234"
+}
+
+###
+// Get All Bookings
+GET http://localhost:3000/api/v1/bookings
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjOGExZDViMDE5MGIyMTQzNjBkYzA1NyIsImlhdCI6MTcwODkzMDkwNSwiZXhwIjoxNzE2NzA2OTA1fQ.D2wq8l4K_4NbIp-kpMfF579ZZSB4y5ChlxF39zbtR-Q
+
+###
+// Get Booking
+GET http://localhost:3000/api/v1/bookings/65dc340e441c2449f0ba707d
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVjOGExZDViMDE5MGIyMTQzNjBkYzA1NyIsImlhdCI6MTcwODkzMDkwNSwiZXhwIjoxNzE2NzA2OTA1fQ.D2wq8l4K_4NbIp-kpMfF579ZZSB4y5ChlxF39zbtR-Q
